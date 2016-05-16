@@ -2,7 +2,7 @@
 
 body {
   font-family: sans-serif;
-  background: linear-gradient(to left, #00C1B6 , #0496BF);
+  /*background: linear-gradient(to left, #00C1B6 , #0496BF);*/
 
 }
 
@@ -13,27 +13,32 @@ body {
 }
 
 h1 {
-  color: #fff;
+  /*color: #fff;*/
   text-align: center;
   font-weight: 100;
   font-size: 40px;
 }
 
 h3 {
-  color: #fff;
+  /*color: #fff;*/
+}
+
+h4 {
+  /*color: #fff;*/
+  text-align: center;
 }
 
 /* ---- button ---- */
 
 .button {
   display: inline-block;
-  padding: 0.5em 1.0em;
-  background: #fff;
-  border: none;
+  padding: 0.5em 0.8em;
+  background: #efefef;
+  border: 1px solid black;
   border-radius: 7px;
   color: #333;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -45,7 +50,7 @@ h3 {
 
 .button:active,
 .button.is-checked {
-  background-color: #4CAF50;
+  background-color: #04a7d5;
 }
 
 .button.is-checked {
@@ -69,7 +74,9 @@ h3 {
   float: left;
   border-radius: 0;
   margin-left: 0;
-  margin-right: 1px;
+  margin-right: -1px;
+  outline-color: transparent;
+  outline-style: none;
 }
 
 .button-group .button:first-child { border-radius: 0.25em 0 0 0.25em; }
@@ -105,7 +112,6 @@ h3 {
 
 .ui-group .button-group {
   display: inline-block;
-  margin-right: 20px;
 }
 
 /* lead-card */
@@ -136,16 +142,16 @@ h3 {
 
 /*custom lead card*/
 
-.real-lead-card {
+.lead-card {
     position: relative;
     margin: 10px 25px;
     padding: 20px;
     border-radius: 5px !important;
-    height: 180px !important;
+    height: 220px !important;
     background: #ffffff !important;
-    -webkit-box-shadow: 2px 2px 10px rgba(72, 72, 72, 0.75);
-    -moz-box-shadow: 2px 2px 10px rgba(72, 72, 72, 0.75);
-    box-shadow: 2px 2px 10px rgba(72, 72, 72, 0.75);
+    -webkit-box-shadow: 2px 2px 10px rgba(72, 72, 72, 0.25);
+    -moz-box-shadow: 2px 2px 10px rgba(72, 72, 72, 0.25);
+    box-shadow: 2px 2px 10px rgba(72, 72, 72, 0.25);
     border: 1px solid #e2e2e2;
     color: #4a4a4a;
     overflow: hidden;
@@ -153,6 +159,14 @@ h3 {
     width: 350px !important;
     float: left;
     cursor: pointer;
+    transition: box-shadow 200ms ease;
+}
+
+.lead-card:hover {
+    -webkit-box-shadow: 2px 2px 10px rgba(72, 72, 72, 1);
+    -moz-box-shadow: 2px 2px 10px rgba(72, 72, 72, 1);
+    box-shadow: 2px 2px 10px rgba(72, 72, 72, 1);
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .brand {
@@ -164,13 +178,14 @@ h3 {
 }
 
 .brand-logo {
-    height: 60px;
+    max-height: 60px;
+    max-width: 260px;
 }
 
 
 /*pricing tags*/
 
-.real-lead-card .tags {
+.tags {
   margin-bottom: 25px;
 }
 
@@ -207,16 +222,16 @@ span.tag.price5 {
 /*end pricing tags*/
 
 
-.email-headers {
+.product-header {
+  display: inline-block;
   margin-bottom: 25px;
-    font-size: 1.33rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 2.33rem;
+  border-bottom: 2px solid;
+  font-weight: bold;
 }
     
 
-.real-lead-card .pad {
+.lead-card .pad {
     position: absolute;
     width: 100%;
     height: 40px;
@@ -225,21 +240,21 @@ span.tag.price5 {
     background-image: linear-gradient( 180deg, rgba(255, 255, 255, 0) 00%, #FFFFFF 70% );
 }
 
-/*button.close {
-    -webkit-appearance: none;
-    padding: 0;
-    cursor: pointer;
-    background: 0 0;
-    border: 0;
+a {
+  color: #04a7d5;
 }
 
-.close {
-  float: right;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
-  filter: alpha(opacity=20);
-  opacity: .2;
-}*/
+a:hover {
+  text-decoration: none;
+}
+
+.product-img {
+  max-width: 100%;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background: #04a7d5;
+  font-weight: bold;
+}
