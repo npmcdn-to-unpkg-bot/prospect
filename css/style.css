@@ -16,24 +16,18 @@ body {
 	display: table;
 }
 
-h1, h2, h3, h4 {
-	font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
 h1 {
-	/*color: #fff;*/
+	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-align: center;
-	font-weight: 100;
+	font-weight: 300;
 	font-size: 40px;
 }
 
 h3 {
-	/*color: #fff;*/
 	text-align: center;
 }
 
 h4 {
-	/*color: #fff;*/
 	text-align: center;
 	font-weight: 400;
 	font-size: 17px;
@@ -139,7 +133,7 @@ h4 {
 
 /*lead cards*/
 
-.lead-card {
+.product-card {
 		position: relative;
 		margin: 10px 25px;
 		padding: 20px;
@@ -158,7 +152,7 @@ h4 {
 		cursor: pointer;
 }
 
-.lead-card:hover {
+.product-card:hover {
 		-webkit-transition: all 0.1s ease;
 		-moz-transition: all 0.1s ease;
 		-ms-transition: all 0.1s ease;
@@ -246,7 +240,7 @@ span.tag.price5 { background: #0D47A1; }
 }
 		
 
-.lead-card .pad {
+.product-card .pad {
 		position: absolute;
 		width: 100%;
 		height: 80px;

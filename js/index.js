@@ -2,7 +2,7 @@
 
 // init Isotope
 var $grid = $('.grid').isotope({
-  itemSelector: '.lead-card' 
+  itemSelector: '.product-card' 
 });
 
 // store filter for each group
