@@ -25,8 +25,12 @@
 
 	<header class="hero-title">
 		<h1><i class="em em-100" style="margin-right:10px; margin-top: 8px; font-size: 0.9em;"></i>Ways to Generate More Prospects</h1>
-		<h4>Need more sales prospects? Filter the tools below to find the right one for you.</h4>
+		<h4>Need more sales prospects? Find the right way for you by filtering the tools below.</h4>
+
+
 	</header>
+
+
 
 
 <!-- Filters -->
@@ -38,30 +42,52 @@
 		<div class="button-group js-radio-button-group" data-filter-group="color">
 			<button class="button is-checked" data-filter="">All</button>
 			<button class="button" data-filter=".research">Research</button>
-			<button class="button" data-filter=".identify">identify</button>
 			<button class="button" data-filter=".list-building">List Building</button>
 			<button class="button" data-filter=".engage">Engage</button>
 			<button class="button" data-filter=".linkedin">LinkedIn</button>
-			<button class="button" data-filter=".email">Email</button>
-			<button class="button" data-filter=".intelligence">Intelligence</button>
-			<button class="button" data-filter=".data-sourcing">Data Sourcing</button>
+			<button class="button" data-filter=".contact-info">Contact Info</button>
 			<button class="button" data-filter=".data-enrichment">Data Enrichment</button>
-			<button class="button" data-filter=".referrals">Referrals</button>
+			<button class="button" data-filter=".referral">Referral</button>
 			<button class="button" data-filter=".social-selling">Social Selling</button>
 			<button class="button" data-filter=".trigger-based">Trigger Based</button>
 			<button class="button" data-filter=".outsourcing">Outsourcing</button>
 			<button class="button" data-filter=".crawl">Crawl</button>
+			<button class="button" data-filter=".slack">Slack</button>
+			<button class="button" data-filter=".chrome">Chrome</button>
 		</div>
 	</div>
 </div>
 
 <div class="filters">
 	<div class="ui-group">
-		<h3>Price</h3> <!-- price -->
+		<h3 class="tooltips">Price
+			<span class="tooltiptext">
+				<p>
+				<div style="border-bottom: 1px solid white;margin-bottom: 12px;">Price Guide</div>
+				Average price user/month:
+				<br>
+				$ = $0 - $50
+				<br>
+				$$ = $50 - $200
+				<br>
+				$$$ = $200+
+				<div style="padding: 8px 0;">OR</div>
+				Budget per month:
+				<br>
+				$ = 0 - $200
+				<br>
+				$$ = $200 - $500
+				<br>
+				$$$ = $500+
+				</p>
+			</span>
+		</h3> 
+
+		<span></span><!-- price -->
 		<div class="button-group js-radio-button-group" data-filter-group="size">
 			<button class="button is-checked" data-filter="">All</button>
-			<button class="button" data-filter=".free">Free</button> <!-- free -->
-			<button class="button" data-filter=".freemium">Freemium</button> <!-- freemium -->
+			<button class="button" data-filter=".free">free</button> <!-- free -->
+			<button class="button" data-filter=".freemium">freemium</button> <!-- freemium -->
 			<button class="button" data-filter=".cheap">$</button>  <!-- $ -->
 			<button class="button" data-filter=".moderate">$$</button> <!-- $$ -->
 			<button class="button" data-filter=".expensive">$$$</button> <!-- $$$ -->
@@ -69,6 +95,7 @@
 	</div>
 
 </div>
+
 
 <!-- End Filters -->
 
@@ -80,26 +107,12 @@
 
 <div class="grid">
 
-	<div class="product-card moderate list-building" data-toggle="modal" data-target="#unomyModal">
-		<div class="brand">
-				<img class="brand-logo" src="https://www.unomy.com/site/v1/img/top-bar_logo.png"> 
-			</div>
-			<div class="tags">
-					<span class="tag price2">$$</span><span class="tag type">List Building</span>
-					</div>
-			<div class="description">
-			<span class="brand-name">Unomy</span>
-				A sales and marketing intelligence platform that helps businesses gather, retain and process information about their customers. Unomy is a sales and marketing intelligence platform that helps businesses gather, retain and process information about their customers.
-			</div>
-			<div class="pad"></div>
-	</div>
-
-	<div class="product-card freemium cheap linkedin">
+	<div class="product-card freemium linkedin">
 		<div class="brand">
 			<img class="brand-logo" src="images/logos/profilehopper.png"> 
 		</div>
 		<div class="tags">
-				<span class="tag price3">LinkedIn</span><span class="tag price2">Freemium</span><span class="tag price3">$</span>
+				<span class="tag price2">freemium</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Profile Hopper</span>
@@ -108,12 +121,26 @@
 		<div class="pad"></div>
 	</div>
 
-	<div class="product-card moderate type">
+	<div class="product-card free contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="images/logos/clearbitconnect.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Clearbit Connect</span>
+			Give your inbox super powers. Find any business email address.
+		</div>
+		<div class="pad"></div>
+	</div>	
+
+	<div class="product-card moderate outsourcing">
 		<div class="brand">
 			<img class="brand-logo" src="images/logos/steward.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price3">$$</span>
+			<span class="tag price4">$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Steward</span>
@@ -122,21 +149,35 @@
 		<div class="pad"></div>
 	</div>
 
-	<div class="product-card free type">
+	<div class="product-card expensive type">
 		<div class="brand">
-			<img class="brand-logo" src="https://prospect.io/assets/logo-7095ebab5ac0988702d4648072537bd19a7baca807c405d939d71d56b010406d.png"> 
+			<img class="brand-logo" src="http://founders.as/static/images/portfolio/pipetop-logo-2x.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price1">Free</span><span class="tag price3">$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
-		<span class="brand-name">Prospect.io</span>
-			A simple sales tool to organise the process of sales prospecting.
+		<span class="brand-name">Pipetop</span>
+			Find the right Companies, Contacts and Emails. Equip your sales team with the right contact information.
 		</div>
 		<div class="pad"></div>
 	</div>
 
-	<div class="product-card expensive list-building trigger-based data-sourcing">
+	<div class="product-card cheap list-building data-enrichment social-selling engage">
+		<div class="brand">
+			<img class="brand-logo" src="https://cliently.com/images/cliently-inverted-blue-logo.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price3">$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Cliently</span>
+			Looks for critical business events to identify new opportunities and deliver them to your pipeline every day. 
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive list-building trigger-based research">
 		<div class="brand">
 			<img class="brand-logo" src="https://d1mfvzd5g3mg00.cloudfront.net/dist/images/logo-cyan-light-bg.png"> 
 		</div>
@@ -152,6 +193,34 @@
 
 	<div class="product-card freemium type">
 		<div class="brand">
+			<img class="brand-logo" src="https://prospect.io/assets/logo-7095ebab5ac0988702d4648072537bd19a7baca807c405d939d71d56b010406d.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price2">freemium</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Prospect.io</span>
+			A simple sales tool to organise the process of sales prospecting.
+		</div>
+		<div class="pad"></div>
+	</div>
+
+	<div class="product-card moderate list-building research data-enrichment chrome" data-toggle="modal" data-target="#unomyModal">
+		<div class="brand">
+				<img class="brand-logo" src="https://www.unomy.com/site/v1/img/top-bar_logo.png"> 
+			</div>
+			<div class="tags">
+					<span class="tag price4">$$</span><span class="tag type">List Building</span>
+					</div>
+			<div class="description">
+			<span class="brand-name">Unomy</span>
+				A sales and marketing intelligence platform that helps businesses gather, retain and process information about their customers. Unomy is a sales and marketing intelligence platform that helps businesses gather, retain and process information about their customers.
+			</div>
+			<div class="pad"></div>
+	</div>
+
+	<div class="product-card expensive outsourcing">
+		<div class="brand">
 			<img class="brand-logo" src="http://inspirebeats.com/wp-content/uploads/2015/03/InspireBeats-logo-1.png"> 
 		</div>
 		<div class="tags">
@@ -164,12 +233,12 @@
 		<div class="pad"></div>
 	</div>
 
-	<div class="product-card free list-building data-enrichment">
+	<div class="product-card moderate list-building data-enrichment">
 		<div class="brand">
 			<img class="brand-logo" src="https://spaceship.rocks/logo/spaceship_text_inbo_2000x700.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price1">Free</span>
+			<span class="tag price4">$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Spaceship</span>
@@ -192,12 +261,12 @@
 		<div class="pad"></div>
 	</div>
 
-	<div class="product-card moderate list-building data-enrichment">
+	<div class="product-card moderate list-building contact-info">
 		<div class="brand">
 			<img class="brand-logo" src="http://static1.squarespace.com/static/5648eae3e4b0440522772dca/56abe335ab28102f612edd33/56abe349b09f95938d442e51/1454278943542/Lead411.png?format=300w"> 
 		</div>
 		<div class="tags">
-			<span class="tag price5">$$</span>
+			<span class="tag price4">$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Lead411</span>
@@ -220,12 +289,12 @@
 		<div class="pad"></div>
 	</div>
 
-	<div class="product-card free data-enrichment">
+	<div class="product-card free contact-info">
 		<div class="brand">
 			<img class="brand-logo" src="https://www.voilanorbert.com/img/norbert.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price1">Free</span>
+			<span class="tag price1">free</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">VoilaNorbert</span>
@@ -234,7 +303,7 @@
 		<div class="pad"></div>
 	</div>
 
-	<div class="product-card moderate type">
+	<div class="product-card moderate engage contact-info list-building linkedin chrome">
 		<div class="brand">
 			<img class="brand-logo" src="https://27nxpweybwurrzs33stln919-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/LeadFuze-png-for-BG.png"> 
 		</div>
@@ -248,26 +317,12 @@
 		<div class="pad"></div>
 	</div>
 
-	<div class="product-card moderate type">
-		<div class="brand">
-			<img class="brand-logo" src="http://founders.as/static/images/portfolio/pipetop-logo-2x.png"> 
-		</div>
-		<div class="tags">
-			<span class="tag price4">$$</span>
-		</div>
-		<div class="description">
-		<span class="brand-name">Pipetop</span>
-			Find the right Companies, Contacts and Emails. Equip your sales team with the right contact information.
-		</div>
-		<div class="pad"></div>
-	</div>
-
 	<div class="product-card expensive outsourcing">
 		<div class="brand">
 			<img class="brand-logo" src="https://www.leadgenius.com/img/logo_dark.svg"> 
 		</div>
 		<div class="tags">
-			<span class="tag price4">$$$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">LeadGenius</span>
@@ -281,7 +336,7 @@
 			<img class="brand-logo" src="http://photos.prnewswire.com/prnvar/20140205/SF55180LOGO"> 
 		</div>
 		<div class="tags">
-			<span class="tag price4">$$$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">DataFox</span>
@@ -290,21 +345,21 @@
 		<div class="pad"></div>
 	</div>
 
-	<div class="product-card expensive trigger-based identify">
+	<div class="product-card expensive trigger-based research">
 		<div class="brand">
 			<img class="brand-logo" src="https://www.cbinsights.com/img/logo.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price4">$$$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
-		<span class="brand-name">CB Insights for</span>
+		<span class="brand-name">CB Insights for Sales</span>
 			CB Insights for Sales takes data about your customers, products and services to identify who you should target next.
 		</div>
 		<div class="pad"></div>
 	</div>
 
-	<div class="product-card moderate list-building data-enrichment">
+	<div class="product-card moderate list-building data-enrichment contact-info">
 		<div class="brand">
 			<img class="brand-logo" src="images/logos/clearbit.png"> 
 		</div>
@@ -318,26 +373,12 @@
 		<div class="pad"></div>
 	</div>	
 
-	<div class="product-card free data-sourcing">
-		<div class="brand">
-			<img class="brand-logo" src="images/logos/clearbit.png"> 
-		</div>
-		<div class="tags">
-			<span class="tag price4">Free</span>
-		</div>
-		<div class="description">
-		<span class="brand-name">Clearbit Connect</span>
-			Give your inbox super powers. Find any business email address.
-		</div>
-		<div class="pad"></div>
-	</div>	
-
-	<div class="product-card expensive data-sourcing crawl">
+	<div class="product-card expensive research crawl">
 		<div class="brand">
 			<img class="brand-logo" src="http://cdn2.hubspot.net/hubfs/53/Case_Studies/Datanyze/logo.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price4">$$$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Datanyze</span>
@@ -346,12 +387,12 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive data-sourcing crawl">
+	<div class="product-card expensive list-building">
 		<div class="brand">
 			<img class="brand-logo" src="http://www.zoominfo.com/business/mktg/images/zi_logo.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price4">$$$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Zoominfo</span>
@@ -360,12 +401,12 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive data-sourcing crawl">
+	<div class="product-card expensive list-building">
 		<div class="brand">
 			<img class="brand-logo" src="http://www.insideview.com/wp-content/uploads/2014/09/logo_2-1.jpg"> 
 		</div>
 		<div class="tags">
-			<span class="tag price4">$$$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">InsideView</span>
@@ -374,12 +415,12 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive data-sourcing crawl">
+	<div class="product-card expensive contact-info">
 		<div class="brand">
-			<img class="brand-logo" src="http://www.insideview.com/wp-content/uploads/2014/09/logo_2-1.jpg"> 
+			<img class="brand-logo" src="https://pbs.twimg.com/profile_images/718196636782972928/p5qerhpH.jpg"> 
 		</div>
 		<div class="tags">
-			<span class="tag price4">$$$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">KickFire</span>
@@ -388,12 +429,12 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive data-sourcing crawl">
+	<div class="product-card expensive research crawl">
 		<div class="brand">
 			<img class="brand-logo" src="http://ww1.prweb.com/prfiles/2010/03/21/1240354/builtWithLogoTransparent.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price4">$$$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">BuiltWith</span>
@@ -402,12 +443,12 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive data-sourcing crawl">
+	<div class="product-card expensive outsourcing">
 		<div class="brand">
 			<img class="brand-logo" src="http://blogs-images.forbes.com/tomiogeron/files/2013/03/Crushpath_Logotype.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price4">$$$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Crushpath</span>
@@ -416,12 +457,12 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive data-sourcing crawl">
+	<div class="product-card expensive outsourcing">
 		<div class="brand">
 			<img class="brand-logo" src="http://uploads.webflow.com/553ed9ddeb855b6a5f0e2808/560af24158dc87dc400e7b54_hiplead%20logo%20blue%20new.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price4">$$$</span>
+			<span class="tag price5">$$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">HipLead</span>
@@ -458,7 +499,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive list-building contact-info">
+	<div class="product-card expensive list-building contact-info social-selling">
 		<div class="brand">
 			<img class="brand-logo" src="https://dudodiprj2sv7.cloudfront.net/product-logos/Rn/m7/N84P5G1LDMPA.png"> 
 		</div>
@@ -472,7 +513,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive list-building contact-info">
+	<div class="product-card expensive list-building contact-info social-selling">
 		<div class="brand">
 			<img class="brand-logo" src="https://workablehr.s3.amazonaws.com/uploads/account/logo/6818/large_PeopleLinx_New_Logo__6_.png"> 
 		</div>
@@ -486,7 +527,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card free list-building contact-info">
+	<div class="product-card free list-building research social-selling">
 		<div class="brand">
 			<img class="brand-logo" src="http://www.webanalyticsworld.net/wp-content/uploads/2012/07/followerwonklogo.png"> 
 		</div>
@@ -514,12 +555,12 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card freemium research trigger-based">
+	<div class="product-card freem research trigger-based">
 		<div class="brand">
 			<img class="brand-logo" src="https://www.owler.com/5.5.2.764/images/owlerlogo_highresolution.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price2">free</span>
+			<span class="tag price1">free</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Owler</span>
@@ -556,7 +597,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card moderate contact-info">
+	<div class="product-card moderate contact-info research list-building engage data-enrichment">
 		<div class="brand">
 			<img class="brand-logo" src="https://www.zenprospect.com/images/logo-black.svg"> 
 		</div>
@@ -570,7 +611,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive contact-info">
+	<div class="product-card expensive research contact-info">
 		<div class="brand">
 			<img class="brand-logo" src="https://discoverorg.com/wp-content/themes/discoverorg_2015/img/DiscoverOrg-Sales-Intelligence-Solutions-Logo.png"> 
 		</div>
@@ -584,7 +625,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive contact-info">
+	<div class="product-card expensive research trigger-based list-building">
 		<div class="brand">
 			<img class="brand-logo" src="https://cdn2.hubspot.net/hubfs/1797693/assets/img/logos/vainu/vainu-logo.png?t=1463396800593"> 
 		</div>
@@ -603,7 +644,7 @@
 			<img class="brand-logo" src="https://crunchbase-production-res.cloudinary.com/image/upload/c_pad,h_140,w_140/v1454442555/m9hcojxklgajtwzn79np.jpg"> 
 		</div>
 		<div class="tags">
-			<span class="tag price1">Free</span>
+			<span class="tag price1">free</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Siftery</span>
@@ -612,12 +653,12 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card moderate research">
+	<div class="product-card moderate contact-info">
 		<div class="brand">
 			<img class="brand-logo" src="https://anygrowth.com/img/logo_black.svg"> 
 		</div>
 		<div class="tags">
-			<span class="tag price3">$$</span>
+			<span class="tag price4">$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Anygrowth</span>
@@ -626,12 +667,12 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card moderate research">
+	<div class="product-card moderate contact-info">
 		<div class="brand">
 			<img class="brand-logo" src="https://sellhack-static.s3.amazonaws.com/img/logo.png"> 
 		</div>
 		<div class="tags">
-			<span class="tag price3">$$</span>
+			<span class="tag price4">$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Sellhack</span>
@@ -640,7 +681,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card moderate research linkedin contact-info">
+	<div class="product-card moderate linkedin contact-info engage">
 		<div class="brand">
 			<img class="brand-logo" src="https://aeroleads.com/assets/logo.png"> 
 		</div>
@@ -654,9 +695,9 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive outreach">
+	<div class="product-card expensive engage">
 		<div class="brand">
-			<img class="brand-logo" src="https://www.outreach.io/assets/logo/outreach-new-logo-blue.svg"> 
+			<img class="brand-logo" src="https://p5.zdassets.com/hc/theme_assets/700934/200077298/outreach-logo-blue.png"> 
 		</div>
 		<div class="tags">
 			<span class="tag price5">$$$</span>
@@ -682,7 +723,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive outreach research">
+	<div class="product-card expensive engage list-building">
 		<div class="brand">
 			<img class="brand-logo" src="http://www.growbots.com/assets/logo_dark.svg"> 
 		</div>
@@ -696,12 +737,12 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive outreach research">
+	<div class="product-card moderate engage social-selling">
 		<div class="brand">
 			<img class="brand-logo" src="http://500.co/wp-content/uploads/2015/04/pro.jpg"> 
 		</div>
 		<div class="tags">
-			<span class="tag price5">$$$</span>
+			<span class="tag price4">$$</span>
 		</div>
 		<div class="description">
 		<span class="brand-name">Proleads</span>
@@ -710,7 +751,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card expensive outreach research">
+	<div class="product-card expensive engage referral">
 		<div class="brand">
 			<img class="brand-logo" src="http://cdn2.hubspot.net/hub/1118433/hubfs/Outro_Website/OUTRO_logo_SVG.svg?t=1463096241024&width=140"> 
 		</div>
@@ -724,7 +765,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card moderate outreach research">
+	<div class="product-card moderate engage contact-info">
 		<div class="brand">
 			<img class="brand-logo" src="https://lever-client-logos.s3.amazonaws.com/persistiq2015.png"> 
 		</div>
@@ -738,7 +779,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card moderate outreach research">
+	<div class="product-card moderate engage">
 		<div class="brand">
 			<img class="brand-logo" src="https://salesloft.com/SalesLoft-Logo.png"> 
 		</div>
@@ -752,7 +793,7 @@
 		<div class="pad"></div>
 	</div>		
 
-	<div class="product-card moderate outreach research">
+	<div class="product-card moderate engage">
 		<div class="brand">
 			<img class="brand-logo" src="https://d2p9ez1wat05y7.cloudfront.net/companies/12797/logos/1440558265/offer.png"> 
 		</div>
@@ -762,6 +803,706 @@
 		<div class="description">
 		<span class="brand-name">Sendbloom</span>
 			Build your pipeline using hyper-personalized, automated cadences that fit effortlessly into your existing workflow.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card freemium trigger-based">
+		<div class="brand">
+			<img class="brand-logo" src="https://mention.com/wp-content/themes/mention/img/men__logo-def.svg"> 
+		</div>
+		<div class="tags">
+			<span class="tag price2">freemium</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Mention</span>
+			Media monitoring made simple. People are talking about your competitors. Find them and join the conversation.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card freemium contact-info list-building">
+		<div class="brand">
+			<img class="brand-logo" src="http://www.fillthefunnel.com/wp-content/uploads/2015/07/Email-Hunter-light_logo.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price2">freemium</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Email Hunter</span>
+			Find email addresses from any website.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card freemium contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="images/logos/rocketreach.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price2">freemium</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">RocketReach</span>
+			Lookup email and phone contact info for 250+ million professionals.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card moderate contact-info list-building">
+		<div class="brand">
+			<img class="brand-logo" src="https://www.toofr.com/assets/logo-c920359ad01d9c270efd219cdafbf454529c71174ace2c240c897b699ffa5182.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price4">$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Toofr</span>
+			Get the right email addresses for your leads. Fast, accurate, inexpensive. 
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive contact-info list-building">
+		<div class="brand">
+			<img class="brand-logo" src="images/logos/nova.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Nova</span>
+			Content Intelligence Engine to enhance your existing email messaging to  engage customers and prospects.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card free contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="https://cdn.anymailfinder.com/assets/anymailfinder-logo-03bfc0fb3201f2b775514251d9fa3cc05870b96ea8e3ce32fc7777d352181d67.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Anymail finder</span>
+			Collects information from several sources to find the email address of people at any company.
+		</div>
+		<div class="pad"></div>
+	</div>			
+
+	<div class="product-card free engage">
+		<div class="brand">
+			<img class="brand-logo" src="images/logos/emailgenerator.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Cold Email Generator</span>
+			Quickly create a 5-touchpoint sales email campaign using proven cold email templates.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card moderate engage">
+		<div class="brand">
+			<img class="brand-logo" src="images/logos/reply.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price4">$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Reply</span>
+			Send cold emails that feel warm.
+		</div>
+		<div class="pad"></div>
+	</div>		
+	
+	<div class="product-card free crawl">
+		<div class="brand">
+			<img class="brand-logo" src="http://connectors.poc.interworks.com/importio/importio-logo.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Import.io</span>
+			Scrape the web, without manual scripting.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card moderate contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="http://www.francebiztech.org/wp-content/uploads/2015/11/Logo_DATANANAS_LeadGen_HD-300x89.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price4">$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Datananas</span>
+			Create highly targeted lists of B2B prospects from professional social networks.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card moderate contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="images/logos/mailmatch.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price4">$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">MailMatch</span>
+			Create highly targeted lists of B2B prospects from professional social networks.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="http://logo.clearbit.com/growamp.com"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">GrowAmp</span>
+			3,000 Apps Launch Every Day. GrowAmp gives you their contact information.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card freemium data-enrichment">
+		<div class="brand">
+			<img class="brand-logo" src="http://zefyr.io/images/zefyr_logo_hr.jpg"> 
+		</div>
+		<div class="tags">
+			<span class="tag price2">freemium</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Zefyr</span>
+			Surfaces insights about the people, companies, and customers you're emailing to help you sell more.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card freemium trigger-based chrome">
+		<div class="brand">
+			<img class="brand-logo" src="images/logos/attach.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price2">freemium</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Attach</span>
+			Lead gen and analytics for your sales documents.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card free referral">
+		<div class="brand">
+			<img class="brand-logo" src="https://weave.in/assets/weave-logo-dark-733a37186f8dfc5ecee9eeda4d0cedd0021f2c2134e863e9d83c8d2943a10bc2.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Weave</span>
+			A personalized professional introduction every week.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card cheap trigger-based slack">
+		<div class="brand">
+			<img class="brand-logo" src="https://crunchbase-production-res.cloudinary.com/image/upload/c_pad,h_140,w_140/v1449078992/e6tvld3rtcxsguit3mrm.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price3">$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Attentive.us</span>
+			Connects to your CRM to give you timely alerts about your prospects, so that you'll know when they're ready to buy.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="https://components.elance-odesk.com/marketing-ui/master/img/upwork-logo.svg"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Upwork</span>
+			Find freelancers to tackle any job, any size, any time.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card moderate contact-info list-building linkedin chrome">
+		<div class="brand">
+			<img class="brand-logo" src="https://d3kjp0zrek7zit.cloudfront.net/uploads/product/image/15038/large_detail_1444043107.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price4">$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Salestools.io</span>
+			Find and download prospects from Linkedin, Xing and other lead sources.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive contact-info list-building research">
+		<div class="brand">
+			<img class="brand-logo" src="https://cdn-images-2.medium.com/max/220/1*n7pHtu0iaUVZfsifp1LW1Q@2x.jpeg"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Mighty Signal</span>
+			Hard-to-get-data on every mobile app right at your fingertips.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card free data-enrichment slack">
+		<div class="brand">
+			<img class="brand-logo" src="images/logos/amplemarket.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Amplemarket Fetch</span>
+			A Lead Enrichment Bot for Slack. Real-time insights about every new sign up.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card free referral">
+		<div class="brand">
+			<img class="brand-logo" src="https://yanado.com/blog/wp-content/uploads/2014/12/logo.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Conspire</span>
+			Leverage your extended network to get the best intro.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card freemium research">
+		<div class="brand">
+			<img class="brand-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/CrunchBase.svg/1280px-CrunchBase.svg.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price2">freemium</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Crunchbase</span>
+			Discover innovative companies and the people behind them.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card free research">
+		<div class="brand">
+			<img class="brand-logo" src="http://kpcbweb2.s3.amazonaws.com/companies/546/logo/original/AngelList-logo.png?1416856402"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">AngeList</span>
+			Info on trending, growing startups. 
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive ">
+		<div class="brand">
+			<img class="brand-logo" src="https://media.licdn.com/media/p/7/005/05a/12f/3bc6018.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Spiderbook</span>
+			A connected network of every company in the world including their customers, partners, suppliers and people involved in those deals.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card moderate referral">
+		<div class="brand">
+			<img class="brand-logo" src="https://static.sellercrowd.com/images/sc_logo.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price4">$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">SellerCrowd</span>
+			An anonymous forum that allows people in Ad Tech to exchange information about target companies and accounts.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card freemium chrome">
+		<div class="brand">
+			<img class="brand-logo" src="https://ringlead-marketing-prod.s3.amazonaws.com/static/capture/images/logo.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price2">freemium</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Capture</span>
+			Go to any site or social profile and pull data using a Chrome browser extension.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card cheap chrome">
+		<div class="brand">
+			<img class="brand-logo" src="http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2011/11/ecquire.jpg"> 
+		</div>
+		<div class="tags">
+			<span class="tag price3">$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Ecquire</span>
+			Sales productivity tool that lets you update your CRM without leaving your workflow.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive">
+		<div class="brand">
+			<img class="brand-logo" src="http://www.hoovers.com/content/dam/english/image-library/logos/hoovers-logo-171x76.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Hoovers</span>
+			Proprietary company profiles and industry information.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card cheap">
+		<div class="brand">
+			<img class="brand-logo" src="http://bvweb-herokuapp-com.global.ssl.fastly.net/assets/home/logo-5661946929ecf2c0b83708276a5162a86ab0166818374d68498bd5c94b47f149.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price3">$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">BriteVerify</span>
+			Email Validation and Email Verification serivce to reduce bounce rates by up to 98%.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card cheap">
+		<div class="brand">
+			<img class="brand-logo" src="https://camo.githubusercontent.com/57d85942e80003df33971c07a4f08e4969f69889/68747470733a2f2f7374617469632e6b69636b626f782e696f2f6b69636b626f785f6769746875622e706e67"> 
+		</div>
+		<div class="tags">
+			<span class="tag price3">$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Kickbox</span>
+			Determine which email addresses are real and high-quality for free.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card cheap trigger-based research">
+		<div class="brand">
+			<img class="brand-logo" src="http://funnelfire.azurewebsites.net/wp-content/uploads/2014/10/Logo-Final-onLight.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price3">$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Funnelfire</span>
+			Combs the Web for relevant data on people and companies and delivers research to you in a pro-active way, empowering you to know your prospects and customers even better – while saving hours of research time.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive research">
+		<div class="brand">
+			<img class="brand-logo" src="http://timgthomas.github.io/stateful-css-slides/avention-logo.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Avention</span>
+			Provides the opportunity intelligence you need to gain a comprehensive understanding of your prospects and customers.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card free trigger-based">
+		<div class="brand">
+			<img class="brand-logo" src="http://www.thelogofactory.com/wp-content/uploads/2015/09/fixed-google-logo-font.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Google Alerts</span>
+			Monitor the Web for interesting new content.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive trigger-based">
+		<div class="brand">
+			<img class="brand-logo" src="https://www.infer.com/wp-content/themes/Infer/assets/img/logo.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Infer</span>
+			Fuel account-based marketing and outbound efforts by feeding high-potential lists of Accounts and Contacts into the top of your funnel.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card free contact-info chrome">
+		<div class="brand">
+			<img class="brand-logo" src="http://db2atwekqs4o1.cloudfront.net/assets/dly_logo_homepage_green-07111f6d697b2a5837c61e5e1e7b6007eccd865860b76ee3d60895a3142fa605.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Discover.ly</span>
+			Know more about contacts in Gmail, LinkedIn, Twitter and more. See profile information from social networks as you browse.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive outsourcing">
+		<div class="brand">
+			<img class="brand-logo" src="http://bctechsummit.ca/wp-content/uploads/2015/12/Carb.io_.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Carb.io</span>
+			Automated outbound sales system for predictable revenue.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive research">
+		<div class="brand">
+			<img class="brand-logo" src="https://mixrank.com/static/images/logo.png?193"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Mixrank</span>
+			Leverages your current customer base to identify potential hot new prospects via searching specific industries, keywords or products.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card free slack social-selling">
+		<div class="brand">
+			<img class="brand-logo" src="https://trello-attachments.s3.amazonaws.com/5574da6ac6dabacde8746474/299x118/a5b2f62e0f6d27128fe7bd5273b27ddb/slack_logo.jpeg"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Slack groups</span>
+			Join communities in Slack and chat with your prospects where they hang out. 
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card free social-selling">
+		<div class="brand">
+			<img class="brand-logo" src="http://d342t18316d1fl.cloudfront.net/5997f80/img/fb_groups.svg"> 
+		</div>
+		<div class="tags">
+			<span class="tag price1">free</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Facebook groups</span>
+			Join communities in Slack and chat with your prospects where they hang out. 
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive list-building contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="http://cdn2.hubspot.net/hub/28329/file-2086553059-png/Img/logo-new.png?t=1463488197749"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Sales Inside</span>
+			Custom, targeted and verified data for B2B companies.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive list-building contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="http://wwwrkwp-cdn.rainkingonline.com/wp-content/uploads/2015/11/logo-text-tagline@2x.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">RainKing</span>
+			Provides detailed org charts of technology departments, and accurate direct contact data on decision makers.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive list-building contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="https://www.privco.com/themes/privco-platform/img/logo-main.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">PrivCo</span>
+			Financial information on over 900,000 private companies worldwide.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive list-building research data-enrichment">
+		<div class="brand">
+			<img class="brand-logo" src="http://s3.amazonaws.com/tracxnassets/assets/static/images/tracxn_logo_new.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Tracxn</span>
+			Track and curate millions of startups to help you track sectors of interest.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive list-building contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="http://www.leadspace.com/wp-content/themes/twentyfifteen-child/images/logo_blue.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Leadspace</span>
+			Find and target prospects who look just like your best customer.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive list-building contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="http://www.faure-u.com/wp-content/uploads/2014/04/logo-iko-system.jpg"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">IKO System</span>
+			The ultimate sales automation software to engage leads and trigger 5x more meetings.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive list-building contact-info linkedin chrome">
+		<div class="brand">
+			<img class="brand-logo" src="https://media.licdn.com/media/p/2/005/0b8/0bf/3b0a602.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Prospect Hive</span>
+			Build targeted prospect lists in no time.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive list-building contact-info linkedin chrome">
+		<div class="brand">
+			<img class="brand-logo" src="http://www.egrabber.com/assets/img/egrabber_logo.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">eGrabber</span>
+			Automated list building, business lead generation, email list completion, data capture software for B2B sales and recruiting.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card expensive list-building contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="https://www.globaldatabase.co.uk/img/logo.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price5">$$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Global Database</span>
+			Company intelligence on global markets
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card moderate list-building contact-info">
+		<div class="brand">
+			<img class="brand-logo" src="https://prospectify.io/img/logo-footer.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price4">$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">Prospectify</span>
+			Automated list building and sales acceleration for warm outreach.
+		</div>
+		<div class="pad"></div>
+	</div>		
+
+	<div class="product-card moderate list-building contact-info chrome linkedin">
+		<div class="brand">
+			<img class="brand-logo" src="images/logos/salesintelligent.png"> 
+		</div>
+		<div class="tags">
+			<span class="tag price4">$$</span>
+		</div>
+		<div class="description">
+		<span class="brand-name">SalesIntelligent</span>
+			Prospect from social networks. Discover contact information. Sync prospects to your CRM.
 		</div>
 		<div class="pad"></div>
 	</div>		
@@ -778,7 +1519,7 @@
 
 	<!-- footer: made by attach -->
 	<center>
-	<p style="color:000;">Made with <i class="em em-heart"></i> by <a href="#" style="color:#000; font-weight: bold; text-decoration: none; border-bottom: 1px solid #000;">Attach</a></p></center>
+	<p style="color:000;">Made with <i class="em em-heart"></i> by <a href="#" style="color:#000; font-weight: bold; text-decoration: none; border-bottom: 2px solid #000;">Attach</a></p></center>
 	<!-- end footer -->
 
 	<br>&nbsp;</br>
