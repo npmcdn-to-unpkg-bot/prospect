@@ -13,7 +13,7 @@ nav {
 }
 
 .hero-title {
-	margin: 7.5vh auto 4vh;
+	margin: 7.2vh auto 4vh;
 }
 
 .filters {
@@ -38,6 +38,7 @@ h4 {
 	text-align: center;
 	font-weight: 400;
 	font-size: 17px;
+	color: #777;
 }
 
 /* ---- filter buttons ---- */
