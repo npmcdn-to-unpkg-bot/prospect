@@ -3,6 +3,7 @@
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	min-height: 1200px;
+	line-height: 1.6;
 	/*background: linear-gradient(to left, #00C1B6 , #0496BF);*/
 }
 
@@ -216,7 +217,6 @@ h4 {
 		position: relative;
 		display: inline-block;
 		padding: 5px 12px;
-		margin: 3px;
 		border-radius: 15px;
 		line-height: 19px;
 		color: white;
@@ -302,6 +302,7 @@ a:focus, a:hover {
 	color: #fff;
 	font-weight: 500;
 	padding: 10px 26px;
+	margin: 0 10px 10px 0;
 	-webkit-transition: all 0.1s ease;
 	-moz-transition: all 0.1s ease;
 	-ms-transition: all 0.1s ease;
@@ -330,10 +331,12 @@ a:focus, a:hover {
 
 .modal-header { border-bottom: none; }
 
+.modal-body { padding: 25px; }
+
 .modal-footer { 
 	border-top: none; 
 	text-align: left;
-	padding: 0 15px 40px 15px;
+	padding: 0 25px 40px 25px;
 }
 
 .tooltips {
